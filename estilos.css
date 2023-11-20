@@ -4,19 +4,77 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family:cursive;
-    font-size: x-large;
+/*HEADER*/
+:root{
+    --color-primary: #093A3E;
+    --color-primary-dark: #001011;
+
+    --color-secundary: #64E9EE;
+    --color-secundary-dark: #3AAFB9;
+
+    --color-gray-light: #f1f1f1;
+    --color-gray: #ccc;
+    --color-gray-dark: #333
 }
 
+header{
+    padding: 60px;
+    text-align: center;
+    background-image: url("https://www.barrystickets.com/blog/wp-content/uploads/2021/09/bts-tickets-inglewood-sofi-stadium-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1{
+    font-size: 40px;
+    margin: 0 0 20px;
+}
+
+header p{
+    margin: 0 0 10px;
+}
+
+header div{
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+/*CUERPO*/
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    border-radius: 10px;
+}
+
+/*MENÚS*/
 .navbar{
-    background: #FBD3E9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #BB377D, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #BB377D, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #efcaba;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #9794F2, #BDC5F2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #9794F2,#BDC5F2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center !important;
 }
 
 .mt-6{
     margin-top: 6rem;
+}
+
+/*CARRUSEL*/
+.d-item{
+    height: 800px;
+}
+
+.d-img{
+    height: 200%;
+    object-fit: cover;
+    filter: brightness(0.6);
 }
 
 /*CUERPO*/
@@ -111,4 +169,27 @@ main
 /*TABLA*/
 .table{
     text-align: center;
+}
+
+/*PÁGINA GENERAL*/
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
 }
