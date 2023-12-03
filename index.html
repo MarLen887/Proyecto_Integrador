@@ -5,445 +5,581 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador</title>
     <link href="estilos.css" rel="Stylesheet">
+    <link href="presentacion.html" rel="...">
     <link rel="shortcut icon" href="Logo_tienda.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
   </head>
 
 <body>
+
+  <!--HEADER CON ANIMACIÓN-->
   <header>
-    <div>
-      <img alt="No cargó la imagen" src="Logo_tienda.png" height="150">
-      <h1>SonoVinilo</h1>
-      <p>"Tu ritmo, tu historia, tu álbum"</p>
+    <div class="logo">
+    <img alt="No cargó la imagen" src="Logo_tienda.png" height="150">
     </div>
+    <div class="container-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-card">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+      </svg>      
+    </div>
+    
   </header>
 
-      <nav class="navbar navbar-expand-lg navbar-light "> <!--Agregar a esta clas fixed-top para que se mueva-->
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#menú1">Descuentos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#menú2">Productos disponibles</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#menú3">Próximos álbumes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#menú4">Artistas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#menú5">Conócenos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#menú6">Comentarios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Iniciar sesión</a>
-              </li>
+  <!--BARRA DE NAVEGACIÓN-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--Agregar a esta clas fixed-top para que se mueva-->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://marlen887.github.io/Hoja-de-Presentaci-n/">SonoVinilo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#1">Disponibles</a></li>
+              <li><a class="dropdown-item" href="#2">Próximos álbumes</a></li>
+              <li><a class="dropdown-item" href="#3">Lighsticks</a></li>
+              <li><a class="dropdown-item" href="#4">Merchandising</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#pag">Descuentos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#pag" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Artistas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#pag">ASTRO</a></li>
+              <li><a class="dropdown-item" href="#pag">ATEEZ</a></li>
+              <li><a class="dropdown-item" href="#pag">BLACKPINK</a></li>
+              <li><a class="dropdown-item" href="#pag">BTS</a></li>
+              <li><a class="dropdown-item" href="#pag">SEVENTEEN</a></li>
+              <li><a class="dropdown-item" href="#">STRAY KIDS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Preguntas frecuentes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ofertas</a></li>
+              <li><a class="dropdown-item" href="#">Tiempo de espera</a></li>
+              <li><a class="dropdown-item" href="#">¿Cuántos productos puedo comprar?</a></li>
+              <li><a class="dropdown-item" href="#">Método de pago</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Iniciar sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+        <!------CARRUSEL 1---->
+      <section class="carrusel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="ATZcarr.jpeg" class="d-block w-100" alt="No cargó la imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="BTScarr.jpg" class="d-block w-100" alt="No cargó la imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="ITcarr.jpg" class="d-block w-100" alt="No cargó la imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="GIcarr.jpg" class="d-block w-100" alt="No cargó la imagen">
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </nav>
+      </section>
+
       <!--SECCIÓN 1-->
-    <section class="seccion1">
-      <div class="row tarjetas">
-        <section class="seccion1">
-        <figure class="text-center">
-          <blockquote class="blockquote" id="menú1">
+      <div class="titulo" id="1">
+        <figure class="text-center titulo">
+          <blockquote class="blockquote" id="1">
             <p><h2>Productos disponibles</h2></p>
           </blockquote>
           <figcaption class="blockquote-footer">Actualizados hoy</figcaption>
-        </figure>
-
-      <div class="card-group">
-        <div class="card">
-          <img src="ASTalbum.webp" class="card-img-top" alt="No cargó la imagen">
-          <div class="card-body">
-            <h5 class="card-title">ASTRO - GATE WAY</h5>
-            <p class="card-text">Nuevo álbum, más póster de preventa</p>
-            <p class="card-text"><small class="text-body-secondary">Precio: $650 (con IVA)</small></p>
-            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="ATZalbum.jpeg" class="card-img-top" alt="No cargó la imagen">
-          <div class="card-body">
-            <h5 class="card-title">ATEEZ - THE WORLD EP.2</h5>
-            <p class="card-text">Nuevo álbum, más póster de preventa</p>
-            <p class="card-text"><small class="text-body-secondary">Precio: $650 (con IVA)</small></p>
-            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="BPalbum.jpg" class="card-img-top" alt="No cargó la imagen">
-          <div class="card-body">
-            <h5 class="card-title">BLACKPINK - BORN PINK</h5>
-            <p class="card-text">Nuevo álbum, más póster de preventa</p>
-            <p class="card-text"><small class="text-body-secondary">Precio: $620 (con IVA)</small></p>
-            <a href="#" class="btn btn-primary">¡COMPRAR!</a>
-          </div>
-        </div>
-        <div class="card">
-        <img src="BTSalbum.webp" class="card-img-top" alt="No cargó la imagen">
-        <div class="card-body">
-          <h5 class="card-title">BTS - LOVE YOURSELF</h5>
-          <p class="card-text">Nuevo álbum, más póster de preventa</p>
-          <p class="card-text"><small class="text-body-secondary">Precio: $990 (con IVA)</small></p>
-          <a href="#" class="btn btn-primary">¡COMPRAR!</a>
-        </div>
-      </div>      
-  </div>
-
-  <div class="card-group">
-    <div class="card">
-  <img src="DAY6album.jpg" class="card-img-top" alt="No cargó la imagen">
-  <div class="card-body">
-    <h5 class="card-title">DAY6 - THE DEMON</h5>
-    <p class="card-text">Nuevo álbum, más póster de preventa</p>
-    <p class="card-text"><small class="text-body-secondary">Precio: $540 (con IVA)</small></p>
-    <a href="#" class="btn btn-primary">¡COMPRAR!</a>
-  </div>
-</div>
-<div class="card">
-<img src="EXOalbum.png" class="card-img-top" alt="No cargó la imagen">
-<div class="card-body">
-  <h5 class="card-title">EXO - EXIST</h5>
-  <p class="card-text">Nuevo álbum, más póster de preventa</p>
-  <p class="card-text"><small class="text-body-secondary">Precio: $940 (con IVA)</small></p>
-  <a href="#" class="btn btn-primary">¡COMPRAR!</a>
-</div>
-</div>
-<div class="card">
-  <img src="GIalbum.jpg" class="card-img-top" alt="No cargó la imagen">
-  <div class="card-body">
-    <h5 class="card-title">(G)IDLE - I LOVE</h5>
-    <p class="card-text">Nuevo álbum, más póster de preventa</p>
-    <p class="card-text"><small class="text-body-secondary">Precio: $911 (con IVA)</small></p>
-    <a href="#" class="btn btn-primary">¡COMPRAR!</a>
-  </div>
-</div>
-  <div class="card">
-    <img src="HWalbum.jpg" class="card-img-top" alt="No cargó la imagen">
-    <div class="card-body">
-      <h5 class="card-title">HWASA - MARÍA</h5>
-      <p class="card-text">Nuevo álbum, más póster de preventa</p>
-      <p class="card-text"><small class="text-body-secondary">Precio: $985 (con IVA)</small></p>
-      <a href="#" class="btn btn-primary">¡COMPRAR!</a>
-    </div>
-  </div>
-</div>
-
-<div class="card-group">
-  <div class="card tarjeta-vacia">
-    <img src="promo1.JPG" class="card-img-top" alt="No cargó la imagen">
-    <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text"></p>
-    <p class="card-text"><small class="text-body-secondary"></small></p>
-  </div>
-</div>
-  <div class="card">
-  <img src="ITZalbum.webp" class="card-img-top" alt="No cargó la imagen">
-  <div class="card-body">
-    <h5 class="card-title">ITZY - GUESS WHO</h5>
-    <p class="card-text">Nuevo álbum, más póster de preventa</p>
-    <p class="card-text"><small class="text-body-secondary">Precio: $685 (con IVA)</small></p>
-    <a href="#" class="btn btn-primary">¡COMPRAR!</a>
-  </div>
-</div>
-<div class="card">
-  <img src="TWalbum.png" class="card-img-top" alt="No cargó la imagen">
-  <div class="card-body">
-    <h5 class="card-title">TWICE - BETWEEN 1&2</h5>
-    <p class="card-text">Nuevo álbum, más póster de preventa</p>
-    <p class="card-text"><small class="text-body-secondary">Precio: $985 (con IVA)</small></p>
-    <a href="#" class="btn btn-primary">¡COMPRAR!</a>
-  </div>
-</div>
-<div class="card tarjeta-vacia">
-    <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text"></p>
-    <p class="card-text"><small class="text-body-secondary"></small></p>
-  </div>
-</div>
-</div>
-      </section>
-
-      <!--SECCIÓN 2-->
-      <section class="seccion2">
-        <figure class="text-center" id="ProAlbum">
-          <blockquote class="blockquote">
-            <p><h2>Próximos álbumes disponibles</h2></p>
-          </blockquote>
-          <figcaption class="blockquote-footer">
-            <cite title="Source Title">En menos de un mes estarán es stock</cite>
-          </figcaption>
-        </figure>
-
+      </div>
+      <main class="seccion1">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100">
-              <img src="JKgolden.webp" class="card-img-top" height="60%" alt="No cargó imagen">
+            <div class="card">
+              <img src="ASTalbum2.jpg" class="card-img-top" alt="No cargó la imagen">
               <div class="card-body">
-                <h5 class="card-title text-center">Jung Kook- GOLDEN</h5>
-                <p class="card-text">Precio: $1,200 (con IVA)</p>
+                <h5 class="card-title">ASTRO - GATE AWAY</h5>
+                <p class="card-text">Nuevo álbum, más póster de preventa</p>
+                <p class="card-text"><small class="text-body-secondary price">Precio: $650 (con IVA)</small></p>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Disponible en 4 días.</small>
+                <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a>
               </div>
             </div>
           </div>
-
           <div class="col">
-            <div class="card h-100">
-              <img src="NCTfact.jpg" class="card-img-top" alt="No cargó imagen">
+            <div class="card">
+              <img src="ATZalbum.jpeg" class="card-img-top" alt="No cargó la imagen">
               <div class="card-body">
-                <h5 class="card-title text-center">NCT 127 - FACT CHECK</h5>
-                <p class="card-text">Precio: $870 (con IVA)</p>
+                <h5 class="card-title">ATEEZ - THE WORLD EP.2</h5>
+                <p class="card-text">Nuevo álbum, más póster de preventa</p>
+                <p class="card-text"><small class="text-body-secondary price">Precio: $650 (con IVA)</small></p>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Disponible en 10 días.</small>
+                <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a>
               </div>
             </div>
           </div>
-
           <div class="col">
-            <div class="card h-100">
-              <img src="SKZstars.jpg" class="card-img-top" alt="No cargó imagen">
+            <div class="card">
+              <img src="BPalbum.jpg" class="card-img-top" alt="No cargó la imagen">
               <div class="card-body">
-                <h5 class="card-title text-center">STRAY KIDS - STAR</h5>
-                <p class="card-text">Precio: $695 (con IVA)</p>
+                <h5 class="card-title">BLACKPINK - BORN PINK</h5>
+                <p class="card-text">Nuevo álbum, más póster de preventa</p>
+                <p class="card-text"><small class="text-body-secondary price">Precio: $620 (con IVA)</small></p>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Disponible en 13 días.</small>
+                <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a>
               </div>
             </div>
           </div>
-
           <div class="col">
-            <div class="card h-100">
-              <img src="TXTfreefall.jpg" class="card-img-top" alt="No cargó imagen">
+            <div class="card">
+              <img src="BTSalbum.webp" class="card-img-top" alt="No cargó la imagen">
               <div class="card-body">
-                <h5 class="card-title text-center">TXT - FREEFALL</h5>
-                <p class="card-text">Precio: $790 (con IVA)</p>
+                <h5 class="card-title">BTS - LOVE YOURSELF</h5>
+                <p class="card-text">Nuevo álbum, más póster de preventa</p>
+                <p class="card-text"><small class="text-body-secondary price">Precio: $990 (con IVA)</small></p>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Disponible en 2 días.</small>
+                <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="DAY6album.jpg" class="card-img-top" alt="No cargó la imagen">
+              <div class="card-body">
+                <h5 class="card-title">DAY6 - THE DEMON</h5>
+                <p class="card-text">Nuevo álbum, más póster de preventa</p>
+                <p class="card-text"><small class="text-body-secondary price">Precio: $540 (con IVA)</small></p>
+              </div>
+              <div class="card-footer">
+                <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="EXOalbum.png" class="card-img-top" alt="No cargó la imagen">
+              <div class="card-body">
+                <h5 class="card-title">EXO - EXIST</h5>
+                <p class="card-text">Nuevo álbum, más póster de preventa</p>
+                <p class="card-text"><small class="text-body-secondary price">Precio: $940 (con IVA)</small></p>
+              </div>
+              <div class="card-footer">
+                <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="GIalbum.jpg" class="card-img-top" alt="No cargó la imagen">
+              <div class="card-body">
+                <h5 class="card-title">(G)IDLE - I LOVE</h5>
+                <p class="card-text">Nuevo álbum, más póster de preventa</p>
+                <p class="card-text"><small class="text-body-secondary price">Precio: $911 (con IVA)</small></p>
+              </div>
+              <div class="card-footer">
+                <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="HWalbum.jpg" class="card-img-top" alt="No cargó la imagen">
+              <div class="card-body">
+                <h5 class="card-title">HWASA - MARÍA</h5>
+                <p class="card-text">Nuevo álbum, más póster de preventa</p>
+                <p class="card-text"><small class="text-body-secondary price">Precio: $911 (con IVA)</small></p>
+              </div>
+              <div class="card-footer">
+                <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="TWalbum.png" class="card-img-top" alt="No cargó la imagen">
+              <div class="card-body">
+                <h5 class="card-title">TWICE - BETWEEN 1&2</h5>
+                <p class="card-text">Nuevo álbum, más póster de preventa</p>
+                <p class="card-text"><small class="text-body-secondary price">Precio: $985 (con IVA)</small></p>
+              </div>
+              <div class="card-footer">
+                <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-        <!--SECCIÓN 3-->
-        <section class="seccion3">
-          <div class="row artículos" id="menú4">
-            <figure class="text-center">
-              <blockquote class="blockquote">
-                <p><h2>Conoce a tus artistas favoritos</h2></p>
-              </blockquote>
-            </figue>
+      </main>
 
-            <div class="card mb-3" style="max-width: 1000px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="ATEEZ.jpeg" class="img-fluid rounded-start" alt="No cargó la imagen">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">ATEEZ</h5>
-                    <p class="card-text">Ateez es una boy band de Corea del Sur formada por la agencia KQ Entertainment. Conformada por ocho integrantes: Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung y Jongho. Debutaron el 24 de octubre de 2018 con su mini álbum Treasure EP.1: All to Zero.</p>
-                    <p class="card-text"><small class="text-body-secondary">Síguenos para estar informado(a).</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3" style="max-width: 1000px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="BTS.jpg" class="img-fluid rounded-start" alt="No cargó la imagen">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">BTS</h5>
-                    <p class="card-text">BTS, también conocido como Bangtan Boys, es un grupo surcoreano formado en 2010. Está compuesto por siete integrantes: Jin, Suga, J-Hope, RM, Jimin, V y Jungkook. A pesar de haber sido creado con un estilo principalmente hip hop, ha llegado a incorporar una gran variedad de géneros en su repertorio musical.</p>
-                    <p class="card-text"><small class="text-body-secondary">Síguenos para estar informado(a).</small></p>
-                  </div>
-                </div>
-              </div>                
-            </div>
-            <div class="card mb-3" style="max-width: 1000px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="skz.webp" class="img-fluid rounded-start" alt="No cargó la imagen">
-                </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">STRAY KIDS</h5>
-                <p class="card-text">Stray Kids es un grupo masculino surcoreano formado en 2017 por JYP Entertainment a través del reality show Stray Kids. El grupo está compuesto actualmente por ocho miembros: Bang Chan, Lee Know, Changbin, Hyunjin, Han, Felix, Seungmin y I.N.</p>
-                <p class="card-text"><small class="text-body-secondary">Síguenos para estar informado(a).</small></p>
-              </div>
-            </div>
-          </div>                
+      <!--SECCIÓN 2-->
+      <section id="2">
+        <div class="titulo">
+          <figure class="text-center titulo">
+            <blockquote class="blockquote">
+              <p><h2>Próximos álbumes</h2></p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Actualizados hoy</figcaption>
         </div>
-        <div class="card mb-3" style="max-width: 1000px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="SVT.jpg" class="img-fluid rounded-start" alt="No cargó la imagen">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="JKgolden.webp" class="card-img-top" alt="No cargó la imagen">
+            <div class="card-body">
+              <h5 class="card-title">Jung Kook- GOLDEN</h5>
+              <p class="card-text"><small class="text-body-secondary">Precio: $1,200 (con IVA)</small></p>
             </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">SEVENTEEN</h5>
-            <p class="card-text">Seventeen es un grupo musical surcoreano formado en el año 2012, que debutó el 26 de mayo de 2015 bajo la compañía discográfica Pledis Entertainment.</p>
-            <p class="card-text"><small class="text-body-secondary">Síguenos para estar informado(a).</small></p>
+            <div class="card-footer">
+              <small class="text-body-secondary">Disponible en 4 días.</small>
+              <a href="" class="original-button2">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="NCTfact.jpg" class="card-img-top" alt="No cargó la imagen">
+            <div class="card-body">
+              <h5 class="card-title">NCT 127 - FACT CHECK</h5>
+              <p class="card-text"><small class="text-body-secondary">Precio: $870 (con IVA)</small></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Disponible en 10 días.</small>
+              <a href="" class="original-button2">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="TXTfreefall.jpg" class="card-img-top" alt="No cargó la imagen">
+            <div class="card-body">
+              <h5 class="card-title">TXT - FREEFALL</h5>
+              <p class="card-text"><small class="text-body-secondary">Precio: $790 (con IVA)</small></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Disponible en 2 días.</small>
+              <a href="" class="original-button2">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="SKZstars.jpg" class="card-img-top" alt="No cargó la imagen">
+            <div class="card-body">
+              <h5 class="card-title">STRAY KIDS - STAR</h5>
+              <p class="card-text"><small class="text-body-secondary">Precio: $695 (con IVA)</small></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Disponible en 13 días.</small>
+              <a href="" class="original-button2">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="NYalbum.jpg" class="card-img-top" alt="No cargó la imagen">
+            <div class="card-body">
+              <h5 class="card-title">NAYEON - I'M NAYEON</h5>
+              <p class="card-text"><small class="text-body-secondary">Precio: $850 (con IVA)</small></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Disponible en 5 días.</small>
+              <a href="" class="original-button2">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="JHalbum.webp" class="card-img-top" alt="No cargó la imagen">
+            <div class="card-body">
+              <h5 class="card-title">JIHYO - ZONE</h5>
+              <p class="card-text"><small class="text-body-secondary">Precio: $700 (con IVA)</small></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Disponible en 2 días.</small>
+              <a href="" class="original-button2">Reservar</a>
+            </div>
           </div>
         </div>
       </div>
       </section>
 
-      <!--SECCIÓN 4-->
-      <section class="seccion4">
-                      <!--TABLA-->
-                      <figure class="text-center" id="menú1">
-                        <blockquote class="blockquote">
-                          <p><h2>Descuentos</h2></p>
-                        </blockquote>
-                      </figure>
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">Productos</th>
-                            <th scope="col">Descripción</th>
-                            <th scope="col">Descuento</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Ábum con póster de preventa</td>
-                            <td>5%</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Ábumes con o sin póster de preventa</td>
-                            <td>10%</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Ábumes sin póster de preventa</td>
-                            <td>13%</td>
-                          </tr>
-                        </tbody>
-                      </table>
-      </section>
-
-                  <!--SonoVinilo-->
-
-        <section>
-        <article class="SV">
-          <figure class="text-center">
-            <blockquote class="blockquote">
-              <p><h2>SonoVinilo</h2></p>
-            </blockquote>
-            <figcaption class="blockquote-footer">EMPRESA MEXICANA</figcaption>
-          </figure>
-          <h5>Somos una empresa 100% mexicana, que desea acercar a los amantes del KPOP con sus artistas favoritos. Esto, a través de sus álbumes más recientes y no tan recientes.</h5>
-          <h5>Garantizamos los envíos seguros mediante paqueterías de confianza aquí en México y en las paqueterías extranjeras, para que cada uno de nuestros clientes quedee satisfecho con la compra que realice.</h5>
-        </article>
-        </section>
-
-              <!--Contacto-->
-
-              <section>
-                <article class="Contacto">
-                  <figure class="text-center">
-                    <blockquote class="blockquote">
-                      <p><h2>Comentarios</h2></p>
-                    </blockquote>
-                  </figure>
-
-                  <h5>Por favor dejanos tus comentarios y sugerencias.</h5>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+            <!--SECCIÓN 3-->
+            <section id="3">
+              <div class="titulo">
+                <figure class="text-center titulo">
+                  <blockquote class="blockquote" id="1">
+                    <p><h2>Lighsticks</h2></p>
+                  </blockquote>
+              </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="Light1.jpeg" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">LE SSERAFIM</h5>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $980 (con IVA)</small></p>
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                  <button type="button enviar" class="btn btn-outline-info">Enviar</button>
-                </article>
-              </section>
-
-              <!--PIE DE PÁGINA-->
-              <footer class="footer">
-                <div class="container">
-                  <div class="footer-row">
-                    <div class="footer-links">
-                      <h4>SonoVinilo</h4>
-                      <ul>
-                        <a href="">Nosotros</a>
-                        <a href="">Creadora</a>
-                        <a href="">Política</a>
-                      </ul>
-                    </div>
-                    <div class="footer-links">
-                      <h4>Síguenos</h4>
-                      <ul>
-                        <a href="https://www.facebook.com/?locale=es_LA" class="fa-brands fa-square-facebook fa-bounce" target="_blank"></a>
-                        <a href="https://www.instagram.com/" class="fa-brands fa-square-instagram fa-bounce" style="color: #dd2a7b;" target="_blank"></a>
-                        <a href="https://twitter.com/?lang=es" class="fa-brands fa-twitter fa-bounce" style="color: #00acee;" target="_blank"></a>
-                      </ul>
-                    </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
                   </div>
                 </div>
-              </footer>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Light2.jpg" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">ATEEZ</h5>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $1,200 (con IVA)</small></p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Light3.webp" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">TXT</h5>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $790 (con IVA)</small></p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Light4.webp" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">BLACKPINK</h5>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $1,500 (con IVA)</small></p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Light5.jpg" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">EXO</h5>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $1,050 (con IVA)</small></p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Light6.webp" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">SHINEE</h5>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $700 (con IVA)</small></p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+
+            <!--SECCIÓN 4-->
+            <section class="seccion4" id="4">
+              <div class="titulo">
+                <figure class="text-center titulo">
+                  <blockquote class="blockquote" id="1">
+                    <p><h2>Merchandising</h2></p>
+                  </blockquote>
+              </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="Merch1.jpg" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">BTS</h5>
+                    <p class="card-text">Camiseta BTS</p>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $699 (con IVA)</small></p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Merch2.jpg" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">ATEEZ</h5>
+                    <p class="card-text">The Fellowship World Tour Hoodies</p>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $699 (con IVA)</small></p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Merch3.jpg" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">STRAY KIDS</h5>
+                    <p class="card-text">Stray Kids Skzoo</p>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $119 (con IVA)</small></p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Merch4.jpg" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">TXT</h5>
+                    <p class="card-text">TXT Shirt Album</p>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $250 (con IVA)</small></p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Merch5.jpg" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">NCT DREAM</h5>
+                    <p class="card-text">Photocard Nct Dream Broken Melodies Album</p>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $263 (con IVA)</small></p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="Merch6.jpg" class="card-img-top" alt="No cargó la imagen">
+                  <div class="card-body">
+                    <h5 class="card-title">BLACKPINK</h5>
+                    <p class="card-text">Blackpink tour</p>
+                    <p class="card-text"><small class="text-body-secondary">Precio: $263 (con IVA)</small></p>
+                  </div>
+              <div class="card-footer">
+                <a href="" class="original-button">¡Comprar! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg></a>
+              </div>
+                </div>
+              </div>
+            </div>
+            </section>
+
+            <!---PIE DE PÁGINA-->
+            <footer class="pie-pagina">
+              <div class="grupo-1">
+                <div class="box">
+                  <figure>
+                    <a href="#">
+                      <img src="Logo_tienda.png" alt="SonoVinilo">
+                    </a>
+                  </figure>
+                </div>
+                <div class="box">
+                  <h2>SonoVinilo</h2>
+                  <p>Tu ritmo, tu historia, tu álbum</p>
+                  <p>¡Gracias por tu compra!</p>
+                </div>
+                <div class="box">
+                  <h2>Síguenos</h2>
+                  <div class="red-social">
+                    <a href="https://www.facebook.com/?locale=es_LA" class="fa-brands fa-square-facebook fa-bounce" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fa-brands fa-square-instagram fa-bounce" style="color: #dd2a7b;" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=es" class="fa-brands fa-twitter fa-bounce" style="color: #00acee;" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="grupo-2">
+                <small>&copy; 2023 <b>SonoVinilo</b> - Todos los Derechos Reservados</small>
+              </div>
               
-              <section class="buttons">
-                <a href="https://www.facebook.com/?locale=es_LA" class="fa-brands fa-square-facebook fa-bounce" target="_blank"></a>
-                <a href="https://www.instagram.com/" class="fa-brands fa-square-instagram fa-bounce" style="color: #dd2a7b;" target="_blank"></a>
-                <a href="https://twitter.com/?lang=es" class="fa-brands fa-twitter fa-bounce" style="color: #00acee;" target="_blank"></a>
-                </section>
-
-      <!------------------------------------------------------------------------------------------------------------>
-
-
-              <!--LADO IZQUIERDO--->
-    <div class="container-fuid mt-6">
-
-      <div class="row pt-4">
-        <div class="col-12 col-md-4 col-lg-4 text-center ladoIZQ" id="mbIZQ">
-          <h3 class="subtitulo-izq">Ofertas</h3>
-          <img src="oferta.png" height="200px">
-          <p class="fs-4">Sólo en álbumes en stock</p>
-
-
-          <h3 class="subtitulo-izq">Tiempo de espera</h3>
-          <img src="espera.png" height="200px">
-          <p class="fs-4">Para álbumes en stock, de una a dos semanas; y en álbumes recientes en el mercado, de tres a cuatro semanas</p>
-
-
-          <h3 class="subtitulo-izq">¿Cuántos puedo comprar?</h3>
-          <img src="compras.png" height="200px">
-          <p class="fs-4">Se pueden comprar máximo 5 álbumes</p>
-
-
-          <h3 class="subtitulo-izq">Método de pago</h3>
-          <img src="Tarjetas.webp" height="200px">
-          <p class="fs-4">Se paga desde la página con una tarjeta de débido y crédito. Ésta no debe ser departamental.</p>
-          
-        </div>
+            </footer>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
