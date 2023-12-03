@@ -11,12 +11,6 @@ body{
     margin: 0 auto;
     color: #333;
 }
-
-.icon-card{
-    width: 40px;
-    height: 40px;
-}
-
 img{
     max-width: 100%;
 }
@@ -44,6 +38,93 @@ header img{
 .container-icon{
     margin-right: 20px;
     justify-items: end;
+    position: relative;
+}
+
+/*--------BOLSA DE COMPRAR------*/
+.icon-card{
+    width: 40px;
+    height: 40px;
+    stroke: black;
+}
+.icon-card :hover{
+    cursor: pointer;
+}
+/*.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}*/
+#contador-productos{
+    font-size: 12px;
+}
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+    border-radius: 10px;
+}
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+.icon-close :hover{
+    stroke: red;
+    cursor: pointer;
+}
+.cart-product{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8px;
+}
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+.hidden-card{
+    display: none;
 }
 
 /*------LISTAS EN EL HEADER--------*/
@@ -89,7 +170,6 @@ img{
     width: 1000px;
     height: auto;
     margin-top: 50px;
-    margin-left: 50px;
     max-width: fit-content;
 }
 .carrusel{
@@ -103,12 +183,23 @@ main
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    place-content: center;
 }
 .seccion4 .card{
     width: fit-content;
     height: 620px;
 }
 .seccion1 .card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seccion3 .card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seccion4 .card-footer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,6 +230,12 @@ main
   }
 
   /*BOTONES DE PRÓXIMOS ALBUMES*/
+  .seccion2 .card-footer{
+    display: grid;
+    position: center;
+    align-items: center;
+    justify-content: center;
+  }
   .original-button2 {
     display: flex;
     align-items: center;
@@ -150,7 +247,7 @@ main
     border-radius: 0px;
     width: 200px;
     height: 40px;
-    position: relative;
+    position: center;
     transition: 0.3s;
     overflow: hidden;
   }
@@ -160,7 +257,7 @@ main
     display: block;
     height: 2px;
     width: 100%;
-    position: absolute;
+    position: center;
     left: 0;
     background-color: #ab35a373;
     transition: .3s;
@@ -185,13 +282,14 @@ main
 /*PARA TODAS LAS TARJETAS*/
 .card{
     margin: 10%;
-    margin-left: 100px;
-    margin-right: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 400px;
     height: 400px;
+}
+.seccion4 .card{
+    height: 700px;
 }
 
 /*ESTILOS DE LOS TÍTULOS*/
@@ -263,7 +361,7 @@ main
     }
  }
 
-/*PÁGINA GENERAL*/
+/*ANIMACIÓN DE LA PÁGINA GENERAL*/
 @keyframes show{
     from{
         opacity: 0;
@@ -284,4 +382,64 @@ img{
 
     animation-range: entry 25% cover 30%;
     animation-fill-mode: both;
+}
+
+@media (min-width:280px) and (max-width: 653px){
+    main .card{
+        width:200px;
+        display: flex;
+        align-items: center;
+    }
+    main .card-footer{
+        align-items: self-start;
+        width: 200px;
+        left: -100px;
+    }
+    main .card-footer .original-button{
+        width: 100px;
+        font-size: 15px;
+    }
+    .seccion2 .card{
+        width:200px;
+        display: flex;
+        align-items: center;
+    }
+    .seccion2 .card-footer{
+        align-items: self-start;
+        width: 200px;
+        left: -100px;
+    }
+    .seccion2 .card-footer .original-button2{
+        width: 100px;
+        font-size: 15px;
+    }
+    .seccion3 .card{
+        width:200px;
+        display: flex;
+        align-items: center;
+    }
+    .seccion3 .card-footer{
+        align-items: self-start;
+        width: 200px;
+        left: -100px;
+    }
+    .seccion3 .card-footer .original-button{
+        width: 100px;
+        font-size: 15px;
+    }
+    .seccion4 .card{
+        width:200px;
+        height:400px;
+        display: flex;
+        align-items: center;
+    }
+    .seccion4 .card-footer{
+        align-items: self-start;
+        width: 200px;
+        left: -100px;
+    }
+    .seccion4 .card-footer .original-button{
+        width: 100px;
+        font-size: 15px;
+    }
 }
