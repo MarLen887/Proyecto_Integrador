@@ -452,3 +452,12 @@ img{
         margin-left: 25%;
     }
 }
+
+@media (min-width:860px) and (max-width: 880px){
+    header, .navbar, .pie-pagina{
+        width: 900px;
+    }
+    .seccion4 .card{
+        height: 500px;
+    }
+}
