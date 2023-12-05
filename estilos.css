@@ -186,8 +186,8 @@ main
     place-content: center;
 }
 .seccion4 .card{
-    width: fit-content;
-    height: 620px;
+    width: 400px;
+    height: fit-content;
 }
 .seccion1 .card-footer{
     display: flex;
@@ -441,5 +441,14 @@ img{
     .seccion4 .card-footer .original-button{
         width: 100px;
         font-size: 15px;
+    }
+}
+
+@media (min-width:400px) and (max-width: 920px){
+    * .card{
+        display: grid;
+        position: center;
+        align-items: center;
+        margin-left: 25%;
     }
 }
